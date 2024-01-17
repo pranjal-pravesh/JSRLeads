@@ -40,11 +40,16 @@ body{
     flex: 1;
 }
 
-li{
+.navOptionsContainer li{
     margin: 0;
     list-style: none;
     padding: 0;
     cursor: pointer;
+    transition: color 150ms;
+}
+
+.navOptionsContainer li:hover{
+    color: #e67e22;
 }
 
 .quotebutton{
@@ -52,23 +57,28 @@ li{
     font-size: 18px;
     font-style: normal;
     letter-spacing: 0.5px;
-    background-color: #071689;
+    background-color: #7BC7E2;
     color: white;
     height: 50px;
     padding: 10px 25px;
+    border: 0;
     border-radius: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 150ms;
 
-/* Shadow/Dark/S */
+
+}
+
+.quotebutton:hover{
+   background-color:  #e67e22;
 }
 
 .pageOne{
     height: calc(100svh - 80px);
     width: 100svw;
-    /* background-color: lightcyan; */
     box-sizing: border-box;
     padding: 80px;
     gap: 80px;
