@@ -49,7 +49,7 @@ body{
 }
 
 .navOptionsContainer li:hover{
-    color: #7BC7E2;
+    color: #0cb0ea;
 }
 
 .quotebutton{
@@ -57,7 +57,7 @@ body{
     font-size: 18px;
     font-style: normal;
     letter-spacing: 0.5px;
-    background-color: #7BC7E2;
+    background-color: #56c1e7;
     color: white;
     height: 50px;
     padding: 10px 25px;
@@ -73,7 +73,7 @@ body{
 }
 
 .quotebutton:hover{
-   background-color:  #56c1e7;
+   background-color:  #0cb0ea;
 }
 
 .pageOne{
@@ -85,4 +85,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pageOneBackColor{
+    height: 100svh;
+    width: 100svw;
+    position: absolute;
+    top: 0;background-color: #BDE3F0;
+    z-index: -1;
+    -webkit-mask-image: linear-gradient(#000 50%, rgba(0,0,0,0));
+    mask-image: linear-gradient(#000, rgba(0,0,0,0));
 }
