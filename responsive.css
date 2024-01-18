@@ -1,0 +1,49 @@
+@media (max-width:1220px){
+    .heading{
+        font-size: 40px;
+        margin-top: 0;
+    }
+    .pageOne img{
+        width: 350px;
+        align-self: flex-start;
+    }
+    .navOptionsContainer{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .pageTwo{
+        flex-direction: column;
+    }
+    .personalized{
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media (max-width:850px){
+    .leftContainer{
+        width: 70%;
+        
+    }
+    .pageOne img{
+        display: none;
+    }
+    .cardsContainer{
+        width: 320px;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .pageTwo{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #f2f7fa;
+    }
+    .pageTwo img{
+        display: none;
+    }
+
+}

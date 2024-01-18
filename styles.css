@@ -15,7 +15,6 @@ body{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #E2E8F0;
 
 
 }
@@ -69,16 +68,18 @@ body{
     align-items: center;
     justify-content: center;
     transition: background-color 150ms;
+    flex-shrink: 0;
 
 
 }
 
 .quotebutton:hover{
    background-color:  #0cb0ea;
+   
 }
 
 .pageOne{
-    height: calc(100svh - 80px);
+    /* height: calc(100svh - 80px); */
     width: 100%;
     box-sizing: border-box;
     padding: 80px;
@@ -86,6 +87,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.leftContainer{
+    width: 35%; 
+    min-width: 330px; 
+    align-self: flex-start; 
+    gap: 20px;
+    
+}
+
+.heading{
+    font-size: 60px; 
+    margin-bottom: 30px;
+}
+
+.pageOne img{
+    width: 500px;
 }
 
 .pageOneBackColor{
@@ -100,11 +118,23 @@ body{
 
 .pageTwo{
     width: 100%;
-    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
+    margin-top: 100px;
+    position: relative;
+}
+.personalized{
+    width: 350px;
+}
+
+.pageTwo img{
+    width: 90%; 
+    height: 600px; 
+    position: absolute; 
+    z-index: -1; 
+    top: -45px;
 }
 
 .cardsContainer{
@@ -135,4 +165,47 @@ body{
 
 .card p{
     margin-bottom: 0;
+}
+
+.pageThree{
+    width: 100%;
+    margin-top: 140px;
+    /* height: 100svh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.page3Head{
+    display: flex; 
+    gap: 10%; 
+    justify-content: center; 
+    width: 90%; 
+    margin-top: 70px; 
+}
+
+.cards2Container{
+    display: flex;
+    width: 70% ; 
+    justify-content: space-between; 
+    min-width:fit-content;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 325px;
+    gap: 20px;
+    margin: 20px;
+}
+
+.pageFour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100svh;
 }
