@@ -21,6 +21,32 @@
         width: 60%;
         text-align: center;
     }
+
+    .pageTwo img{
+        height: 780px;
+    }
+
+    .pageThree{
+        /* flex-direction: row; */
+        justify-content: center;
+        width: auto;
+        
+    }
+
+    .page3Head{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .cards2Container{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .reviews{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:850px){
