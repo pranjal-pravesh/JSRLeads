@@ -1,82 +1,159 @@
-@media (max-width:1220px){
-    .heading{
-        font-size: 40px;
+@media (max-width:1220px) {
+    .heading {
+        font-size: 50px;
         margin-top: 0;
     }
-    .pageOne img{
-        width: 350px;
+
+    .hero-img {
+        margin-bottom: auto;
+    }
+
+    .pageOne img {
+        width: 100%;
+        min-width: 350px;
         align-self: flex-start;
     }
-    .navOptionsContainer{
+
+    .navOptionsContainer {
         display: none;
     }
-    .navbar{
+
+    .navbar {
         justify-content: space-between;
     }
 
-    .pageTwo{
+    .pageTwoEffect::before {
+        content: none;
+    }
+
+    .pageTwoWrapper {
         flex-direction: column;
         align-items: center;
     }
-    .personalized{
-        width: 60%;
+
+    .personalized {
+        max-width: 600px;
         text-align: center;
     }
 
-    .pageTwo img{
-        height: 780px;
+    .personalized span {
+        display: none;
     }
 
-    .pageThree{
+    .cardsContainer {
+        margin-top: 20px;
+    }
+
+    .pageThree {
         /* flex-direction: row; */
         justify-content: center;
         width: auto;
-        
     }
 
-    .page3Head{
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        text-align: center;
-    }
 
-    .cards2Container{
-        flex-direction: column;
-        width: auto;
-    }
-
-    .reviews{
+    .reviews {
         flex-direction: column;
     }
 }
 
-@media (max-width:850px){
-    .leftContainer{
-        width: 70%;
-        
-    }
-    .pageOne img{
+@media (max-width:850px) {
+
+    .pageOne img {
         display: none;
     }
-    .cardsContainer{
-        width: 320px;
-        height: auto;
+
+    .heading {
+        font-size: 45px;
+    }
+
+    .leftContainer {
+        max-width: 400px;
+        width: 100%;
+        min-width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .leftContainer p {
+        min-width: 100%;
+    }
+
+    .quotebutton {
+        margin: 0 auto;
+    }
+
+    .cardsContainer {
+        /* height: auto; */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .pageTwo {
+        padding: 70px 20px;
+    }
+
+    .pageTwoWrapper {
+        padding: 50px 0;
+    }
+
+    .personalized {
+        width: 100%;
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    .personalized h1 {
+        font-size: 40px;
+    }
+
+    .personalized p {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .pageTwo .card {
+        margin: auto;
+        /* width: max-content; */
+    }
+
+    .page3Head {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .page3Head h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .cards2Container {
         grid-template-columns: 1fr;
     }
 
-    .pageTwo{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: #f2f7fa;
-    }
-    .pageTwo img{
-        display: none;
+    .cards2Container p {
+        text-align: center;
     }
 
-    .pageFour img{
+    .pageFour img {
         width: 80%;
         max-width: 390px;
     }
 
+}
+
+@media screen and (max-width:650px) {
+    .pageOne {
+        padding: 0 15px;
+    }
+
+    .pageTwo {
+        padding: 60px 20px;
+    }
+
+    .personalized h1 {
+        font-size: 35px;
+    }
 }
