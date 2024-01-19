@@ -16,6 +16,7 @@
 
     .pageTwo{
         flex-direction: column;
+        align-items: center;
     }
     .personalized{
         width: 60%;
@@ -35,6 +36,7 @@
 
     .page3Head{
         flex-direction: column;
+        align-items: center;
         gap: 30px;
         text-align: center;
     }
@@ -70,6 +72,11 @@
     }
     .pageTwo img{
         display: none;
+    }
+
+    .pageFour img{
+        width: 80%;
+        max-width: 390px;
     }
 
 }
